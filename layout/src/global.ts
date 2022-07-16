@@ -11,6 +11,13 @@ const GlobalStyle = createGlobalStyle`
     background: #FAFAFA;
     overflow: hidden;
   }
+
+  button {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+  }
+  
   @media(max-width: 1080px){
     html {
         font-size: 93.75%;
