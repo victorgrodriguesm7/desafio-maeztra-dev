@@ -54,6 +54,10 @@ export const Actions = styled.div`
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+
+    @media (max-width: 1024px){
+        gap: .25rem;
+    }
 `;
 
 interface ActionProps {
@@ -69,6 +73,10 @@ export const Action = styled.button<ActionProps>`
     color: #353535;
     border-radius: 8px;
     padding: .5rem .75rem;
+
+    @media (max-width: 1024px){
+        font-size: 0;
+    }
 
     ${({ active }) => active ? "border: 1px solid #FAA500;" : "" }
 `;
