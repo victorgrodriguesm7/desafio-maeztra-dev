@@ -6,6 +6,21 @@ const input = [
     "() () () () () [{}]" // Certo
 ]
 
+// A maneira mais fácil para resolver esse problema 
+// é utilizar de uma pilha, a cada caracter de abertura 
+// (, [, { nós o adicionamos na pilha
+// sempre que encontrarmos uma tag de fechamento que seja a mesma 
+// que o topo da pilha, então o desempilhamos
+// Por exemplo se tivermos:
+// [ ( ) ]
+// Primeiro adicionamos o [ a pilha
+// e logo em seguida o (
+// Assim que encontramos a tag de fechamento "("
+// verificamos se é o fechamento correspodente a que está no topo
+// como ela é o fechamento então desempilhamos
+// e fazemos o mesmo processo com o colchete
+// Caso ao final da nossa função a nossa Pilha
+// tenha algum valor, quer dizer que a nossa entrada é inváçida
 class Stack {
     stack = [];
 
