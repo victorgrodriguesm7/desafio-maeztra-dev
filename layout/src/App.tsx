@@ -1,7 +1,9 @@
+import PreHeader from "./components/PreHeader"
+
 function App() {
   return (
     <div>
-      Hello World
+      <PreHeader/>
     </div>
   )
 }
