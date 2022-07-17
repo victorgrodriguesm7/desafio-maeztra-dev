@@ -9,29 +9,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body, html {
     background: #FAFAFA;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   button {
     outline: 0;
     border: 0;
     cursor: pointer;
-  }
-  
-  @media(max-width: 1080px){
-    html {
-        font-size: 93.75%;
-    }
-  }
-  @media(max-width: 1024px){
-    html {
-        font-size: 87.5%;
-    }
-  }
-  @media(max-width: 720px){
-      html {
-          font-size: 80%;
-      }
   }
 `;
 
