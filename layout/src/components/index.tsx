@@ -6,6 +6,7 @@ import Partners from "./Partners";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 import FooterDetails from "./FooterDetails";
+import NewCollection from "./NewCollection";
 
 export {
     CategoryMenu,
@@ -15,5 +16,6 @@ export {
     Partners,
     NewsLetter,
     Footer,
-    FooterDetails
+    FooterDetails,
+    NewCollection
 }
