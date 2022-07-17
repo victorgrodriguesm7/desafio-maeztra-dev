@@ -68,6 +68,10 @@ export const SliderContentDescription = styled.p`
     @media (max-width: 1280px){
         font-size: .85rem;
     }
+
+    @media (max-width: 774px){
+        margin: 1rem 0;
+    }
 `;
 
 export const CustomButton = styled(Button)`
@@ -75,6 +79,10 @@ export const CustomButton = styled(Button)`
 
     @media (max-width: 1280px){
         font-size: .875rem;
+    }
+
+    @media (max-width: 774px){
+        padding: 0.5rem 1rem;
     }
 `;
 
@@ -85,6 +93,10 @@ export const LeftArrow = styled.button`
     bottom: 0;
 
     background: transparent;
+
+    @media (max-width: 774px){
+        left: 5%;
+    }
 `;
 
 export const RightArrow = styled.button`
@@ -94,4 +106,8 @@ export const RightArrow = styled.button`
     bottom: 0;
 
     background: transparent;
+
+    @media (max-width: 774px){
+        right: 5%;
+    }
 `;
