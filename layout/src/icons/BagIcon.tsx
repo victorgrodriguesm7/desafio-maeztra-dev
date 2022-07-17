@@ -1,9 +1,14 @@
-function BagIcon() {
+interface Props {
+  width?: number;
+  height?: number;
+}
+
+function BagIcon({ width, height }: Props) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="15"
-        height="16"
+        width={width ? width : "15"}
+        height={height ? height : "16"}
         fill="none"
         viewBox="0 0 15 16"
       >

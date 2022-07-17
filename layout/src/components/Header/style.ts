@@ -10,14 +10,23 @@ export const Container = styled.header`
 export const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
 
     padding: 1rem 0;
+    @media (max-width: 774px){
+        padding: 1rem .5rem;
+    }
 `;
 
 export const Logo = styled.img`
     object-fit: contain;
+
+    @media (max-width: 774px){
+        margin-right: auto;
+        margin-left: 1rem;
+    }
 `;
 
 export const InputContainer = styled.div`
