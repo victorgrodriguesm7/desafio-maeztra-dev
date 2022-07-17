@@ -26,5 +26,14 @@ export const ColumnItem = styled.a`
 
     &:not(:first-child){
         margin-top: 1rem;
+
+        @media (max-width: 774px){
+            margin-top: .5rem;
+        }
     }
+`;
+
+export const AccordionColumn = styled.div`
+    display: flex;
+    flex-direction: column;
 `;
