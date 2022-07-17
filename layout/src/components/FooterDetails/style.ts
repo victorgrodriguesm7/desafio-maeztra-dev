@@ -13,6 +13,8 @@ export const Container = styled.div`
     @media (max-width: 774px){
         flex-direction: column;
         align-items: stretch;
+
+        padding: 1rem 5%;
     }
 `;
 
