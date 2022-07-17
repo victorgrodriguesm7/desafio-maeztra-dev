@@ -5,6 +5,10 @@ export const Container = styled.div`
     justify-content: space-evenly;
     
     padding: .75rem 0;
+
+    @media (max-width: 774px){
+        display: none;
+    }
 `;
 
 interface MenuItemProps {
