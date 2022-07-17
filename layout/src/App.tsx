@@ -1,4 +1,4 @@
-import { Header, PreHeader } from "./components"
+import { Deals, Footer, FooterDetails, Header, NewsLetter, Partners, PreHeader } from "./components"
 import MainBanner from "./components/MainBanner"
 
 function App() {
@@ -8,7 +8,12 @@ function App() {
       <Header/>
       <main>
         <MainBanner/>
+        <Deals/>
+        <Partners/>
+        <NewsLetter/>
       </main>
+      <Footer/>
+      <FooterDetails/>
     </div>
   )
 }
