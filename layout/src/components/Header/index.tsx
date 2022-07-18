@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useMobile from "../../hooks/useMobile";
 import BagIcon from "../../icons/BagIcon";
 import DrawerIcon from "../../icons/DrawerIcon";
@@ -5,9 +6,11 @@ import HeartIcon from "../../icons/HeartIcon";
 import PersonIcon from "../../icons/PersonIcon";
 import SearchIcon from "../../icons/SearchIcon";
 import CategoryMenu from "../CategoryMenu";
+import Modal from "../Modal";
 import { Action, Actions, Container, HeaderContainer, Input, InputButton, InputContainer, Logo } from "./style";
 
 export default function Header() {
+  const [ isModalOpen, setIsModalOpen ] = useState(false);
   const { isMobile } = useMobile();
 
   if (isMobile){
@@ -17,7 +20,7 @@ export default function Header() {
           <DrawerIcon/>
           <Logo src="/assets/logo.png"/>
           <Actions>
-            <Action>
+            <Action onClick={() => setIsModalOpen((state) => !state)}>
               <SearchIcon/>
             </Action>
             <Action>
@@ -26,6 +29,7 @@ export default function Header() {
           </Actions>
         </HeaderContainer>
         <CategoryMenu/>
+        {isModalOpen && <Modal onClose={() => setIsModalOpen(false)}/>}
       </Container>
     );
   }
@@ -40,7 +44,7 @@ export default function Header() {
           </InputButton>
         </InputContainer>
         <Actions>
-          <Action>
+          <Action onClick={() => setIsModalOpen((state) => !state)}>
             <PersonIcon/>
             Minha Conta
           </Action>
@@ -55,6 +59,7 @@ export default function Header() {
         </Actions>
       </HeaderContainer>
       <CategoryMenu/>
+      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)}/>}
     </Container>
   );
 }

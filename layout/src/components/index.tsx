@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import FooterDetails from "./FooterDetails";
 import NewCollection from "./NewCollection";
 import Shelf from "./Shelf";
+import Modal from './Modal';
 
 export {
     CategoryMenu,
@@ -19,5 +20,6 @@ export {
     Footer,
     FooterDetails,
     NewCollection,
-    Shelf
+    Shelf,
+    Modal
 }
