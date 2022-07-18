@@ -7,6 +7,7 @@ import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
 import FooterDetails from "./FooterDetails";
 import NewCollection from "./NewCollection";
+import Shelf from "./Shelf";
 
 export {
     CategoryMenu,
@@ -17,5 +18,6 @@ export {
     NewsLetter,
     Footer,
     FooterDetails,
-    NewCollection
+    NewCollection,
+    Shelf
 }
