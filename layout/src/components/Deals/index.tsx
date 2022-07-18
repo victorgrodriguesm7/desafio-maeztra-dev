@@ -1,7 +1,7 @@
 import DiscountIcon from "../../icons/DiscountIcon";
 import ReturnIcon from "../../icons/ReturnIcon";
 import ShippingIcon from "../../icons/ShippingIcon";
-import WarehouseIcon from "../../icons/WareHouseIcon";
+import WarehouseIcon from "../../icons/WarehouseIcon";
 import WorldWideIcon from "../../icons/WorldWideIcon";
 import { Container, DealsList, Deal, Title, DealsContent, DealsTitle, DealsSubTitle } from "./style";
 
