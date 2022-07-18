@@ -30,7 +30,9 @@ export const DealsList = styled.div`
 export const Deal = styled.div`
     display: flex;
     align-items: center;
-    padding: 1rem 0;
+    padding: .5rem 1rem;
+    background: #EFEFEF;
+    border-radius: 4px;
 
     @media (max-width: 774px){
         &:not(:first-child) {
